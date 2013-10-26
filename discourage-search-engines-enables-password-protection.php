@@ -107,6 +107,6 @@ function rl_redirect() {
     }
 }
 
-if (get_option('require_login') == '1')
+if (get_option('blog_public') == '0')
     add_action('get_header', 'rl_redirect');
 ?>
